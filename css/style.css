@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nav Code*/
+nav {
+    /* background-color: #333; */
+    background-color: #282631;
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier';
+}
+
+nav a:hover {
+    color: gray;
+}
+
+/* Info Code*/
+.info {
+    background-color: white;
+}
+
+.info a {
+    text-decoration: none;
+    color: blue
+}
+
+.info a:hover {
+    color:#333; /* For now */
+}
+
+/* Introduction Section*/
+.introduction {
+    margin: 7em;
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+}
+.introduction img {
+    border-radius: 10%;
+}
+.introduction h1 {
+    font-style: italic;
+    font-size: 50px;
+    height: 10vh;
+    padding-left: 200px;
+}
+.introduction p {
+    font-size: 17px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* About Me */
+.three-col {
+    font-family: 'Rubik', sans-serif;
+    padding: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    padding: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Footer Code*/
+footer {
+    background-color: #333;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Calibri';
+}
+
+footer a:hover {
+    color: gray
+}
+
+/* Contact Me */
+.contact {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: center;
+}
+
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Source Code Pro', monospace;
+    padding: 50px;
+}
+
+/* Attempting to Make Scrolling Section*/
+.name {
+    background-color: #393646;
+    padding-bottom: 50px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Courier New', sans-serif;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;  
+}
+
+.scroll div {
+    display: flex;
+    gap: 2em;
+}
+
+.scroll h1 {
+    font-size: 4em;
+    color: white;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+
+.RightToLeft {
+    animation: RightToLeft 11s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from {
+        transform:translateX(0%)
+    } to {
+        transform: translateX(-50%);
+    }
+}
+
+
